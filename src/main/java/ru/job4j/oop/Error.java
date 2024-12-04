@@ -1,14 +1,12 @@
 package ru.job4j.oop;
 
 public class Error {
-    boolean active;
-    int status;
-    String message;
+   private boolean active;
+   private int status;
+   private String message;
 
     public Error() {
-        active = false;
-        status = 404;
-        message = "Еще какое-то сообщение";
+
     }
 
     public Error(boolean active, int status, String message) {
