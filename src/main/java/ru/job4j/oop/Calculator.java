@@ -11,11 +11,12 @@ public class Calculator {
         return y - x;
     }
 
-    public int divade (int y) {
-        return y/x;
+    public int divade(int y) {
+        return y / x;
     }
+
     public int sumAllOperation(int y) {
-        return y = sum(y) + minus(y) + divade(y);
+        return sum(y) + minus(y) + divade(y);
     }
 
     public static void main(String[] args) {
