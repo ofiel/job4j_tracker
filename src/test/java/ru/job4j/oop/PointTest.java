@@ -6,12 +6,21 @@ import org.junit.jupiter.api.Test;
 class PointTest {
 
     @Test
-    void when00to20then2() {
-        double expected = 2.0;
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
-        double distance = a.distance(b);
-        Assertions.assertThat(distance).isEqualTo(expected, Assertions.withPrecision(0.01));
+    void when000to246then7Dot483() {
+        double expected = 7.483;
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(2, 4, 6);
+        double distance3d = a.distance3d(b);
+        Assertions.assertThat(distance3d).isEqualTo(expected, Assertions.withPrecision(0.01));
+    }
+
+    @Test
+    void when123to321then2Dot828() {
+        double expected = 2.828;
+        Point a = new Point(1, 2, 3);
+        Point b = new Point(3, 2, 1);
+        double distance3d = a.distance3d(b);
+        Assertions.assertThat(distance3d).isEqualTo(expected, Assertions.withPrecision(0.01));
     }
 
     @Test
