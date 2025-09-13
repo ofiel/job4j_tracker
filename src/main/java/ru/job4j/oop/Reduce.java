@@ -1,10 +1,10 @@
 package ru.job4j.oop;
 
 public class Reduce {
-    static private int[] array;
+    private int[] array;
 
     public void to(int[] array) {
-        Reduce.array = array;
+        this.array = array;
     }
 
     public void print() {
